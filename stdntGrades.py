@@ -107,6 +107,12 @@ def get_valid_marks(prompt, max_marks):
 # Function to get a valid gender input
 def get_valid_gender(prompt):
     while True:
+
+        # .capitalize() converts the first letter of the entire string to uppercase and makes all other letters lowercase.
+        # Example:
+        # text = "aLlaN JAmes"
+        # print(text.capitalize())  # Output: "Allan james"
+
         gender = input(prompt).strip().capitalize()
         if gender in ["Male", "Female"]:
             return gender
